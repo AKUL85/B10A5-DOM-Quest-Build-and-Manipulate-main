@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="">
+
+
+
+        <nav
+            class="bg-pink-50 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 py-5">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="./index.html">
+                    <button type="button"
+                        class="text-black bg-[#B4F461] hover:bg-[#B4F461] focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-2xl px-8 py-2 text-center dark:bg-[#B4F461]dark:hover:bg-[#B4F461] dark:focus:ring-[#B4F461]">
+                        Blog</button>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+
+                    <div class="flex gap-2">
+                        <img src="assets/coin.png" alt="">
+                        <h1 id="my-balance" class="font-bold text-2xl text-gray-500">98600</h1>
+                        <h1 class="font-bold text-2xl text-gray-500">BDT</h1>
+                    </div>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <div class="flex gap-3">
+                        <img src="assets\logo.png" alt="">
+                        <p class="m-auto font-bold text-2xl">Donate Bangladesh</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+    <main class="  mt-36 max-w-screen-xl mx-auto ">
+
+        <div class="flex justify-center gap-4">
+            <button class="text-2xl bg-white border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black"
+                id="don-btn">Donation</button>
+            <button
+                class="text-2xl bg-white border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black">History</button>
+        </div>
+        <div class="divider"></div>
+
+        <section class="  my-16 ">
+            <div class="flex flex-col gap-5">
+                <div class="bg-white border border-gray-300 p-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+
+                        <div class="w-full">
+                            <img class="w-full h-auto sm:h-[60vh] object-cover rounded-lg" src="assets/feni.png" alt="">
+                        </div>
+
+
+                        <div class="flex flex-col space-y-6 md:space-y-7">
+
+                            <div class="flex justify-between">
+                                <div>
+                                    <button class="bg-gray-200 px-4 py-2 rounded-xl w-full sm:w-auto">
+                                        <div class="flex items-center gap-2">
+                                            <img src="assets/coin.png" class="w-6 h-6" alt="">
+                                            <h1 id="noakhali-balance" class="font-bold text-xl text-gray-500">0</h1>
+                                            <h1 class="font-bold text-xl text-gray-500">BDT</h1>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <h3 class="font-bold text-xl text-gray-800 ">
+                                Donate for Flood at Noakhali, Bangladesh
+                            </h3>
+
+
+                            <p class="font-semibold text-gray-500 text-xl  leading-relaxed">
+                                The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                                Your donation will help provide essential supplies and to those affected by this
+                                disaster. Every contribution, big or small, makes difference. Please join us in
+                                supporting the relief efforts and making a positive impact on the lives of those in
+                                need.
+                                So if you guyes have enough money to help someone who are affected please help them.
+                            </p>
+
+
+                            <input id="noakhali-input" type="text" placeholder="Write donation amount"
+                                class="input input-bordered input-primary w-full py-2 px-3 rounded-lg text-gray-700 border-gray-300 md:my-4 lg:my-5" />
+
+                                <button id="noakhali-button"
+                                class="btn bg-[#B4F461] hover:bg-[#B4F461] py-3 rounded-xl text-xl text-black font-bold w-full sm:w-auto">
+                                Donate Now 
+                            </button>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-300 p-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+
+                        <div class="w-full">
+                            <img class="w-full h-auto sm:h-[60vh] object-cover rounded-lg" src="assets/noakhali.png"
+                                alt="">
+                        </div>
+
+
+                        <div class="flex flex-col space-y-6 md:space-y-7">
+
+                            <div class="flex justify-between">
+                                <div>
+                                    <button class="bg-gray-200 px-4 py-2 rounded-xl w-full sm:w-auto">
+                                        <div class="flex items-center gap-2">
+                                            <img src="assets/coin.png" class="w-6 h-6" alt="">
+                                            <h1 id="noakhali2-balance" class="font-bold text-xl text-gray-500">2400</h1>
+                                            <h1 class="font-bold text-xl text-gray-500">BDT</h1>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <h3 class="font-bold text-xl text-gray-800 ">
+                                Donate for Flood Relief in Feni,Bangladesh
+                            </h3>
+
+
+                            <p class="font-semibold text-gray-500 text-xl  leading-relaxed">
+                                The recent floods in Feni have devastated local communities, leading to severe
+                                disruption and loss. Your generous donation will help provide immediate aid, including
+                                food, clean water, and medical supplies, to those affected by this calamity. Toether we
+                                can help them and . Every contribution counts towards making a real difference. Please
+                                consider donating today to assist those in urgent need.
+                            </p>
+
+
+                            <input id="noakhali2-input" type="text" placeholder="Write donation amount"
+                                class="input input-bordered input-primary w-full py-2 px-3 rounded-lg text-gray-700 border-gray-300 md:my-4 lg:my-5" />
+
+
+                            
+
+                            <button  id="noakhali2-button" 
+                            class="btn bg-[#B4F461] hover:bg-[#B4F461] py-3 rounded-xl text-xl text-black font-bold w-full sm:w-auto">
+                            Donate Now 
+                        </button>
+                        
+                        
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-300 p-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+
+                        <div class="w-full">
+                            <img class="w-full h-auto sm:h-[60vh] object-cover rounded-lg"
+                                src="assets/quota-protest.png" alt="">
+                        </div>
+
+
+                        <div class="flex flex-col space-y-6 md:space-y-7">
+
+                            <div class="flex justify-between">
+                                <div>
+                                    <button class="bg-gray-200 px-4 py-2 rounded-xl w-full sm:w-auto">
+                                        <div class="flex items-center gap-2">
+                                            <img src="assets/coin.png" class="w-6 h-6" alt="">
+                                            <h1 id="andolon-balance" class="font-bold text-xl text-gray-500">2400</h1>
+                                            <h1 class="font-bold text-xl text-gray-500">BDT</h1>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <h3 class="font-bold text-xl text-gray-800 ">
+                                Aid for Injured in the Quota Movement
+                            </h3>
+
+
+                            <p class="font-semibold text-gray-500 text-xl  leading-relaxed">
+                                The recent Quota movement has resulted in numerous injuries and significant hardship for
+                                many individuals. Your support is crucial in providing medical assistance,
+                                rehabilitation, and necessary supplies to those affected. By contributing, you help
+                                ensure that injured individuals receive the care and support they need during this
+                                challenging time. Please consider making a donation to support these brave individuals
+                                in their time of need.
+                            </p>
+
+                            <input id="andolon-input" type="text" placeholder="Write donation amount"
+                                class="input input-bordered input-primary w-full py-2 px-3 rounded-lg text-gray-700 border-gray-300 md:my-4 lg:my-5" />
+
+
+                                <button  id="andolon-button"
+                                class="btn bg-[#B4F461] hover:bg-[#B4F461] py-3 rounded-xl text-xl text-black font-bold w-full sm:w-auto">
+                                Donate Now
+                            </button>
+                            
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box">
+                                    <h3 class="text-center text-xl font-bold">Congratulations!</h3>
+                                    <img class="m-auto space-y-2" src="./assets/coin.png" alt="">
+                                    <p class="text-center py-4">You have donated for the mankind</p>
+                                    <div class="modal-action flex justify-center">
+                                        <form method="dialog">
+                                            <button class="btn font-bold">Close</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class=" hidden my-16">
+
+            <div id="container" class="border border-gray-200">
+
+
+            </div>
+
+        </section>
+    </main>
+    <script src="./js/utility.js"></script>
+    <script src="./js/script1.js"></script>
+</body>
+
+</html>

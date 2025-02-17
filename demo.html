@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event History Logger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center p-6">
+
+    <div class="space-x-4 mb-6">
+        <button onclick="logEvent('Button 1 Clicked')" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Button 1</button>
+        <button onclick="logEvent('Button 2 Clicked')" class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">Button 2</button>
+        <button onclick="logEvent('Button 3 Clicked')" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">Button 3</button>
+    </div>
+
+    <div id="history" class="w-full max-w-md bg-white shadow-lg rounded-lg p-4">
+        <h2 class="text-lg font-semibold mb-2">Event History</h2>
+        <div id="historyList" class="space-y-2"></div>
+    </div>
+
+    <script>
+        function logEvent(eventName) {
+            let now = new Date();
+            let eventDate = now.toLocaleDateString(); 
+            let eventTime = now.toLocaleTimeString(); 
+
+            // Create event container div
+            let eventDiv = document.createElement("div");
+            eventDiv.classList.add("bg-gray-50", "p-3", "rounded-lg", "shadow", "border");
+
+            // Create H1 element
+            let eventTitle = document.createElement("h1");
+            eventTitle.textContent = eventName;
+            eventTitle.classList.add("text-lg", "font-bold", "text-gray-700");
+
+            // Create paragraph element for date and time
+            let eventDateTime = document.createElement("p");
+            eventDateTime.textContent = `📅 Date: ${eventDate} | 🕒 Time: ${eventTime}`;
+            eventDateTime.classList.add("text-sm", "text-gray-600", "mt-1");
+
+            // Append elements to eventDiv
+            eventDiv.appendChild(eventTitle);
+            eventDiv.appendChild(eventDateTime);
+
+            // Append eventDiv to history container
+            document.getElementById("historyList").appendChild(eventDiv);
+        }
+    </script>
+
+</body>
+</html>

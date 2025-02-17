@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom HOME</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+</head>
+
+<body>
+
+    <header >
+
+
+
+        <nav
+            class="bg-pink-50 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <button type="button"
+                        class="text-black bg-[#B4F461] hover:bg-[#B4F461] focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-2xl px-8 py-2 text-center dark:bg-[#B4F461]dark:hover:bg-[#B4F461] dark:focus:ring-[#B4F461]">
+                        Blog</button>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    
+                        
+                        <div class="flex gap-2">
+                            <img src="assets/coin.png" alt="">
+                            <h1 class="font-bold text-2xl text-gray-500">98600</h1>
+                            <h1 class="font-bold text-2xl text-gray-500">BDT</h1>
+                        </div>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <div class="flex gap-3">
+                        <img src="assets\logo.png" alt="">
+                        <p class="m-auto font-bold text-2xl">Donate Bangladesh</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </nav>
+
+       
+    </header>
+
+    <main class="mt-36">
+
+        <div class="flex justify-center gap-4">
+            <a href="./home.html"><button id="don" class="text-2xl bg-white border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black">Donation</button></a>
+            <button class="text-2xl bg-white border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black">History</button>
+        </div>
+
+
+        <section class="mt-36 max-w-screen-xl mx-auto px-7">
+           
+                <h1 class="font-bold text-4xl ">Important FAQ </h1>
+            <div class="border border-gray-300 my-10 p-5 bg-pink-400">
+               
+                    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border rounded-none h-full">
+                        <div class="collapse-title text-xl font-medium">What is document objected model (DOM)?</div>
+                        <div class="collapse-content">
+                          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, allowing JavaScript to manipulate the content, structure, and styles dynamically.e</p>
+                        </div>
+                      </div>
+                    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border rounded-none h-full">
+                        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                        <div class="collapse-content">
+                          <ul>
+                            <li>If selecting by ID → getElementById()</li>
+                            <li>If selecting by Class/Tag → querySelectorAll() (recommended over getElementsByClassName())</li>
+                            <li>If selecting only one element → querySelector()</li>
+                            <li>If selecting multiple elements → querySelectorAll()</li>
+                          </ul>
+                        </div>
+                      </div>
+                    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border rounded-none h-full">
+                        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,and why it is usefull?</div>
+                        <div class="collapse-content">
+                          <p>Event Delegation is a technique in JavaScript where instead of attaching event listeners to multiple child elements, you attach a single event listener to a parent element. This listener then handles events that bubble up from its child elements.</p>
+                        </div>
+                      </div>
+                    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border rounded-none h-full">
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an event attributes?</div>
+                        <div class="collapse-content">
+                          <p>🔹Use setAttribute() for quick event binding but prefer addEventListener().
+                            <br>
+                            🔹 Use removeEventListener() to detach events dynamically.
+                            <br>
+                            🔹 Use the event object (event.target, event.clientX, etc.) for handling interactions.
+                            <br>
+                            🔹 Use preventDefault() to stop default actions (e.g., form submission, links).
+                            <br>
+                            🔹 Use stopPropagation() to prevent event bubbling.</p>
+                        </div>
+                      </div>
+                
+            </div>
+        </section>
+    </main>
+
+
+</script>
+
+<script src="./js/script1.js"></script>
+<script src="./js/utility.js"></script>
+</body>
+
+</html>
