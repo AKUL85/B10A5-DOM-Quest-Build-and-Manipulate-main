@@ -60,11 +60,11 @@
 
         <div class="flex justify-center gap-4">
             <a href="./home.html"><button id="don" class="text-2xl bg-white border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black">Donation</button></a>
-            <button class="text-2xl bg-white border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black">History</button>
+            <button id="blog-history" class="text-2xl bg-white border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black">History</button>
         </div>
 
 
-        <section class="mt-36 max-w-screen-xl mx-auto px-7">
+        <section id="faq" class="mt-36 max-w-screen-xl mx-auto px-7">
            
                 <h1 class="font-bold text-4xl ">Important FAQ </h1>
             <div class="border border-gray-300 my-10 p-5 bg-pink-400">
@@ -109,10 +109,27 @@
                 
             </div>
         </section>
+
+        <section class="my-16 hidden "id="history-container" >
+          <h1 class="font-bold text-3xl">HISTORY</h1>
+
+          <div id="history-here" class="border border-gray-200 p-4">
+              <!-- History entries will be appended here -->
+               
+          </div>
+      </section>
     </main>
 
 
+<script>
+  document.getElementById('blog-history').addEventListener('click',function(){
+    document.getElementById('history-container').classList.remove('hidden');
+    document.getElementById('blog-history').classList.add('bg-[#B4F461]');
+    document.getElementById('faq').classList.add('hidden');
+    document.getElementById('faq').classList.remove('bg-[#B4F461]');
+  })
 </script>
+
 
 <script src="./js/script1.js"></script>
 <script src="./js/utility.js"></script>

@@ -61,14 +61,15 @@
     <main class="  mt-36 max-w-screen-xl mx-auto ">
 
         <div class="flex justify-center gap-4">
-            <button class="text-2xl bg-white border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black"
-                id="don-btn">Donation</button>
-            <button
-                class="text-2xl bg-white border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black">History</button>
+            <button id="donation-btn"  class="text-2xl bg-[#B4F461] border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black"
+                >Donation</button>
+                <button id="history-btn" class="text-2xl border border-gray-400 font-semibold rounded-xl py-2 px-4 text-black">
+                    History
+                </button>
         </div>
         <div class="divider"></div>
 
-        <section class="  my-16 ">
+        <section id="donation-container" class="  my-16 ">
             <div class="flex flex-col gap-5">
                 <div class="bg-white border border-gray-300 p-4">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
@@ -244,17 +245,36 @@
 
         </section>
 
-        <section class=" hidden my-16">
+        <section class="my-16 hidden "id="history-container" >
+            <h1 class="font-bold text-3xl">HISTORY</h1>
 
-            <div id="container" class="border border-gray-200">
-
-
+            <div id="history-here" class="border border-gray-200 p-4">
+                <!-- History entries will be appended here -->
+                 
             </div>
-
         </section>
     </main>
-    <script src="./js/utility.js"></script>
-    <script src="./js/script1.js"></script>
+   
+    <script>
+       document.getElementById('donation-btn').addEventListener('click', function () {
+    document.getElementById('donation-container').classList.remove('hidden');
+    document.getElementById('donation-btn').classList.add('bg-[#B4F461]');
+    document.getElementById('history-container').classList.add('hidden');
+    document.getElementById('history-btn').classList.remove('bg-[#B4F461]');
+});
+
+document.getElementById('history-btn').addEventListener('click', function () {
+    document.getElementById('history-container').classList.remove('hidden');
+    document.getElementById('history-btn').classList.add('bg-[#B4F461]');
+    document.getElementById('donation-container').classList.add('hidden');
+    document.getElementById('donation-btn').classList.remove('bg-[#B4F461]');
+});
+
+        
+        
+    </script>
+     <script src="./js/utility.js"></script>
+     <script src="./js/script1.js"></script>
 </body>
 
 </html>
